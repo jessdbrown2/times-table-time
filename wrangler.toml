@@ -1,0 +1,8 @@
+name = "times-table-time"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "TTT"
+id = "0069073f7cd04357ae25e92714f5c185"
