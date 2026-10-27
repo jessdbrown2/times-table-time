@@ -103,7 +103,7 @@ async function sha(t){ const b = await crypto.subtle.digest('SHA-256', new TextE
 
 /* ---------- storage: online db, local fallback ---------- */
 /* Paste your Cloudflare Worker address here, e.g. https://times-table-time.yourname.workers.dev */
-const API = 'PASTE_WORKER_URL';
+const API = 'https://times-table-time.jessdbrown.workers.dev';
 let online = /^https:\/\//.test(API);
 const keyFor = p => p === 'settings/main' ? 'settings' : p === 'stats/facts' ? 'stats' : 's:' + p.split('/')[1];
 async function api(method, path, body){
